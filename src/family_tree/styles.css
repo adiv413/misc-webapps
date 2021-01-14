@@ -1,0 +1,7 @@
+html {
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.inputCell { 
+    float: left; width: 30vw; 
+}

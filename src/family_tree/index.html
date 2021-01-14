@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script src="scripts.js"></script>
+		<base target="_top">
+		<?!= include('CSS_Table'); ?>    
+	</head>
+	<body>
+		<table id="tableRows">
+			<tbody id="tableBody">
+                <tr>
+                    <td><h4 class="depth-1">Top-level ancestor</h4></td>
+                </tr>
+                <tr>
+                    <td><input class="inputCell depth-1" type="text" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td><textarea class="inputCell depth-1" type="text" placeholder="Details" rows=3></textarea></td>
+                </tr>
+                <tr>
+                    <td><input class="inputButton depth-1 btn btn-primary" type="button" value="Add Spouse" onclick="buttonClick(this)"></td>
+                </tr>
+			</tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+		<div class="buttonBar">
+			<input class="inputButton btn btn-primary" type="button" value="Submit" onclick="buttonClick(this)">
+		</div>
+		<?!= include('JS_Table'); ?>    
+	</body>
+</html>
